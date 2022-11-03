@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 50px 25px;
+  border: 2px grey solid;
+}
+
+.upload-btn {
+  width: 80px;
+  height: 40px;
+  background: #0000B3;
+  color: white;
+  font-size: 18px
+}
+
+.file-input {
+  visibility: hidden;
+}
+
+.mat-form-field::ng-deep {
+  width: 500px
+}

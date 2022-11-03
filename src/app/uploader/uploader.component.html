@@ -1,0 +1,16 @@
+<div class="wrapper" id="drop-area">
+  <form>
+    <mat-form-field [formGroup]="formDoc">
+      <ngx-mat-file-input
+        [accept]="uploaderConfig.formatAllowed"
+        formControlName="requiredfile" placeholder="Required input" valuePlaceholder="No file selected" required></ngx-mat-file-input>
+      <mat-icon matSuffix>folder</mat-icon>
+
+      <mat-error *ngIf="formDoc.get('requiredfile').hasError('maxContentSize')">
+        The total size must not exceed {{formDoc.get('requiredfile')?.getError('maxContentSize').maxSize | byteFormat}}
+      </mat-error>
+
+    </mat-form-field>
+  </form>
+
+</div>

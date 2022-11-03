@@ -1,0 +1,38 @@
+.sidebar-container {
+  border: 2px grey solid;
+  height: 100%;
+  margin-right: 2px;
+  border-bottom: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  background: #f1ebeb;
+  cursor: pointer;
+
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-item div {
+  padding: 5px
+}
+.sidebar-item:hover {
+  background: #bad3f6;
+}
+
+.active {
+  background: #8eb7e5;
+
+  &:hover {
+    background: #2282f1;
+  }
+}
+
+

@@ -1,0 +1,11 @@
+<div class="sidebar-container">
+
+  <div (click)="selectItem(file)"
+    *ngFor="let file of files" class="sidebar-item" [ngClass]="{
+  'active': file.id === activeId
+  }">
+    <div class="file-name">{{file.name}}</div>
+    <div class="loaded-at">{{file.uploadTime}}</div>
+    <div class="size">{{file.fileSize}}</div>
+  </div>
+</div>

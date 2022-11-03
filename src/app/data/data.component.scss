@@ -1,0 +1,22 @@
+:host {
+  flex: 1;
+  min-height: 100%;
+}
+
+.header {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.text-container {
+  border: 2px grey solid;
+  height: 100%;
+  padding: 25px 10px
+}
+
+.text {
+  font-size: 18px;
+  padding-top: 10px;
+}
