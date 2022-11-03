@@ -2,7 +2,7 @@ import {AngularFileUploaderConfig} from "angular-file-uploader";
 
 
 export const UploaderConfig = {
-  // 1mb
-  maxSize: 1048576,
+  // 10mb
+  maxSize: 10485760,
   formatAllowed: '.txt',
 }
